@@ -1,0 +1,101 @@
+.datasecurity__section {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.datasecurity__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.datasecurity__headline {
+    text-align: left;
+}
+
+.gototop__button {
+    display: none;
+    position: fixed;
+    bottom: 124px;
+    right: 20px;
+    background-color: #bbb;
+    cursor: pointer;
+    padding: 20px 20px;
+    background-image: url("../assets/icons/arrow-upward.svg");
+    background-size: contain;
+    border-radius: 50%;
+    border-width: 0;
+}
+
+.gototop__button:hover {
+    background-color: rgba(141, 149, 136, 0.439);
+}
+
+.content__datasecurity {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.content__datasecurity span {
+    text-decoration: none;
+}
+
+.d__550px {
+    display: none;
+}
+
+.datasecurity__link, datasecurity__link:visited {
+    color: black;
+}
+  
+.datasecurity__link:hover, datasecurity__link:active {
+    cursor: pointer;
+    color: rgb(141,149,136);
+}
+
+@media(max-width: 1050px) {
+    .gototop__button {
+        bottom: 180px;
+    }
+}
+
+@media(max-width: 650px){
+    .datasecurity_section {
+        margin-top: 48px;
+        gap: 24px;
+    }
+
+    .gototop__button {
+        bottom: 200px;
+    }
+}
+
+@media(max-width: 550px) {
+    .d__550px {
+        display: flex;
+    }
+
+    .dnone__550px {
+        display: none;
+    }
+
+    .gototop__button {
+        bottom: 220px;
+    }
+}
+
+@media(max-width: 500px) {
+    span {
+        font-size: 14px;
+    } 
+}
+
+@media(max-width: 400px){
+    h2 {
+        font-size: 18px;
+        font-weight: 550;
+    }
+}

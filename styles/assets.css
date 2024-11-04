@@ -1,0 +1,150 @@
+.addnotes__button {
+    background-color: rgb(141,149,136);
+    border-radius: 32px;
+    border-width: 0;
+    padding: 0px 16px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.addnotes__button:hover {
+    cursor: pointer;
+    background-color: rgb(152, 162, 146);
+}
+
+.plus__icon {
+    height: 16px;
+    width: 16px;
+}
+
+.edit__button {
+    height: 24px;
+    width: 24px;
+    background: url('../assets/icons/edit_icon.png');
+    background-size: contain;
+    border-width: 0;
+    filter: opacity(0.7);
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.delete__button {
+    height: 24px;
+    width: 24px;
+    background: url('../assets/icons/delete_icon.png');
+    border-width: 0;
+    filter: opacity(0.7);
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.upload__button {
+    height: 24px;
+    width: 24px;
+    background: url('../assets/icons/upload_icon.png');
+    border-width: 0;
+    filter: opacity(0.7);
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.save__button {
+    height: 24px;
+    width: 24px;
+    background: url('../assets/icons/save_icon.png');
+    border-width: 0;
+    filter: opacity(0.7);
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.restore__button {
+    height: 24px;
+    width: 24px;
+    background: url('../assets/icons/restore_icon.png') !important;
+    border-width: 0;
+    filter: opacity(0.7);
+    cursor: pointer;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+
+.home__button {
+    background: url('../assets/icons/home_icon.png');
+    height: 64px;
+    width: 64px;
+    border-width: 0;
+    filter: opacity(0.7);
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.compltedelete__button {
+    height: 28px;
+    width: 28px;
+    background: url('../assets/icons/x_icon.png') !important;
+    border-width: 0;
+    filter: opacity(0.7);
+    cursor: pointer;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+}
+
+.edit__button:hover, .delete__button:hover, 
+.upload__button:hover, .save__button:hover, 
+.home__button:hover, .restore__button:hover,
+.compltedelete__button:hover {
+    filter: opacity(1);
+}
+
+.edit__button:hover .tooltip, 
+.delete__button:hover .tooltip, 
+.save__button:hover .tooltip,
+.compltedelete__button:hover .tooltip,
+.restore__button:hover .tooltip,
+.upload__button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 10000;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+@media(max-width: 400px) {
+    .home__button {
+        height: 48px;
+        width: 48px;
+    }
+}

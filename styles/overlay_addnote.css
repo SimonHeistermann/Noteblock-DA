@@ -1,0 +1,164 @@
+.overlay {
+    background-color: rgba(0, 0, 0, 0.353);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.section__overlay {
+    display: flex;
+    justify-content: center;
+    width: min(100%, 920px);
+    margin-inline: auto;
+    padding-inline: 32px;
+}
+
+.overlay__container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.overlay__header {
+    padding: 24px 32px 0px 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seperator {
+    background-color: lightgrey;
+    height: 1px;
+    width: 100%;
+}
+
+.overlay__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-inline: 32px;
+}
+
+.overlayinputs__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+}
+
+.overlayinputs__container input, select {
+    background-color: rgba(0, 0, 0, 0.076);
+    border-width: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    min-height: 32px;
+    padding-inline: 8px;
+}
+
+.overlay__content textarea {
+    background-color: rgba(0, 0, 0, 0.076);
+    border-width: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 8px;
+    resize: vertical;
+    min-height: 240px;
+    width: calc(75% - 12px);
+}
+
+.input__left {
+    width: 75%;
+}
+
+.categories {
+    width: 25%;
+    font-size: 16px;
+    border-radius: 5px;
+    appearance: none;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="gray" d="M7 7l5 5 5-5H7z"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    color: #333;
+    cursor: pointer;
+}
+
+.overlay__footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    padding: 0px 32px 16px 32px;
+}
+
+.overlay__footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    padding: 0px 32px 16px 32px;
+}
+
+.overlay__footer button, input {
+    background: transparent;
+    border-width: 0;
+    font-size: 16px;
+} 
+
+.overlay__footer button:hover, .overlay__footer input:hover {
+    color: rgb(141,149,136);
+    cursor: pointer;
+}
+
+@media(max-width: 800px) {
+    .overlay__content {
+        gap: 32px;
+    }
+
+    .input__left {
+        width: 50%;
+    }
+
+    .categories {
+        width: 50%;
+    }
+
+    .overlay__content textarea {
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    .overlay__header {
+        padding-inline: 16px;
+    }
+
+    .overlay__content {
+        gap: 40px;
+        padding-inline: 16px;
+    }
+
+    .overlay__footer {
+        padding-inline: 16px;
+    }
+
+    .overlayinputs__container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .overlayinputs__container input{
+        width: 100%;
+    }
+
+    .categories {
+        width: 100%;
+    }
+}

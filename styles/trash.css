@@ -1,0 +1,86 @@
+.trash__button {
+    background: url('../assets/icons/trash_icon.png');
+    height: 64px;
+    width: 64px;
+    border-width: 0;
+    filter: opacity(0.7);
+    cursor: pointer;
+    background-size: contain;
+}
+
+.trash__button:hover {
+    filter: opacity(1);
+}
+
+.delete__all {
+    height: 24px;
+    width: 24px;
+    background: url('../assets/icons/delete_icon.png');
+    border-width: 0;
+    filter: opacity(0.7);
+    cursor: pointer;
+}
+
+.delete__all:hover {
+    filter: opacity(1);
+}
+
+.delete__all:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trash__table {
+    border-spacing: 0;
+    display: table;
+    width: 100%;
+}
+
+.trash__table th {
+    text-align: left;
+    padding: 4px 0px 4px 0px;
+    background-color: rgba(0, 0, 0, 0.14);
+}
+
+.left__tableline {
+    padding: 4px 0px 4px 8px !important;
+    border-radius: 8px 0px 0px 0px;
+}
+
+.right__th {
+    border-radius: 0px 8px 0px 0px;
+}
+
+.trash__table button {
+    background: transparent;
+    border-width: 0;
+    font-size: 16px;
+}
+
+.trash__table button:hover {
+    color: rgb(141,149,136);
+    cursor: pointer;
+}
+
+.trash__section td {
+    padding: 4px 0px 4px 0px;
+}
+
+@media(max-width: 600px) {
+    .dnone__600px {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .dnone__500px {
+        display: none;
+    }
+}
+
+@media(max-width: 400px) {
+    .trash__button {
+        height: 48px;
+        width: 48px;
+    }
+}

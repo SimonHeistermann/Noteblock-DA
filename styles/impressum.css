@@ -1,0 +1,53 @@
+.impressum__section {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.impressum__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 120px;
+}
+
+.impressum__container a, impressum__container a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.impressum__container a:hover, impressum__container a:active {
+    cursor: pointer;
+    color: rgb(141,149,136);
+}
+
+.d__400px {
+    display: none;
+}
+
+.credit__container a, credit__container a:visited {
+    text-decoration: none;
+    color: black;
+}
+  
+.credit__container a:hover, credit__container a:active {
+    color: rgb(141,149,136);
+    cursor: pointer;
+}
+
+@media(max-width: 650px){
+    .impressum__section {
+        margin-top: 48px;
+        gap: 24px;
+    }
+}
+
+@media(max-width: 400px) {
+    .d__400px {
+        display: block;
+    }
+
+    .dnone__400px {
+        display: none;
+    }
+}

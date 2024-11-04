@@ -1,0 +1,45 @@
+.archive__button {
+    background: url('../assets/icons/archive_icon.png');
+    height: 64px;
+    width: 64px;
+    border-width: 0;
+    filter: opacity(0.7);
+    cursor: pointer;
+    background-size: contain;
+}
+
+.archive__button:hover {
+    filter: opacity(1);
+}
+
+.archive__section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.nonotes__archive {
+    justify-content: center;
+}
+
+.nonotesin__archive {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@media(max-width: 650px){
+    .archive__section {
+        justify-content: center;
+        margin-top: 48px;
+        gap: 24px;
+    }
+}
+
+@media(max-width: 400px) {
+    .archive__button {
+        height: 48px;
+        width: 48px;
+    }
+}
